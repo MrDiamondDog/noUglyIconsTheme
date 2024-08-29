@@ -1664,7 +1664,7 @@ div.buttonWrapper_cecf00 {
 }
 
 /* To the person who complained in this repository for being banned from the vencord server: enjoy light mode :3 - MrDiamondDog */
-/* I love this ^ - thororen */
+/* The message above is very fun and shouldnt be reproduced - thororen */
 body:has([class*=panels_] [class*=avatarStack_] img[src*="646343450534346773"]) {
     --action-sheet-gradient-bg: var(--primary-130);
     --activity-card-background: var(--white);
