@@ -1461,11 +1461,12 @@ svg:is(.icon_c87d73) [d^="M13 16V5.41l3.3 3.3a1 1 0 1 0 1.4-1.42l-5-5a1 1 0 0 0-
     width: 24px;
     height: 24px;
     background: currentColor;
+    /* background: currentColor; */
 }
 
-.buttonWrapper_f9af59:has(.lottieIcon_f73ef7)>* {
+/* .buttonWrapper_f9af59:has(.lottieIcon_f73ef7)>* {
     display: none !important;
-}
+} */
 
 /*Gift*/
 .button_dd4f85:is(:nth-last-child(4), :nth-last-child(5)) .button_d0696b>.buttonWrapper_f9af59 {
