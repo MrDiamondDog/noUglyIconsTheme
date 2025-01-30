@@ -1414,7 +1414,7 @@ svg:is(.icon_c87d73) [d^="M13 16V5.41l3.3 3.3a1 1 0 1 0 1.4-1.42l-5-5a1 1 0 0 0-
     background: currentColor;
 }
 
-.button_adca65 .lottieIcon_f73ef7[style^="--__lottieIconColor: v"]>svg {
+.button_adca65 .lottieIcon_f73ef7[style^="--__lottieIconColor: var(--status-danger)"]>svg {
     background: linear-gradient(-45deg, currentColor 12px, var(--status-danger) 0, var(--status-danger) 15px, currentColor 0);
 }
 
@@ -1438,7 +1438,7 @@ svg:is(.icon_c87d73) [d^="M13 16V5.41l3.3 3.3a1 1 0 1 0 1.4-1.42l-5-5a1 1 0 0 0-
 }
 
 /*MicSlash*/
-.button_adca65:nth-last-child(3) .lottieIcon_f73ef7[style^="--__lottieIconColor: v"]>svg {
+.button_adca65:nth-last-child(3) .lottieIcon_f73ef7[style^="--__lottieIconColor: var(--status-danger)"]>svg {
     clip-path: path("M5.5833 9.1667H4.1667C4.1667 10.1583 4.45 11.0833 4.9167 11.9L5.9417 10.875C5.7167 10.3583 5.5833 9.7833 5.5833 9.1667ZM7.5083 9.2375C7.5125 9.2604 7.5167 9.2833 7.5167 9.3083L12.5 4.3167V4.1667C12.5 2.7833 11.3833 1.6667 10 1.6667 8.6167 1.6667 7.5 2.7833 7.5 4.1667V9.1667C7.5 9.1917 7.5042 9.2146 7.5083 9.2375ZM9.7697 13.4106 9.136 14.0442 8.5444 14.6407C8.7482 14.6942 8.9558 14.7366 9.1667 14.7667V18.3333H10.8333V14.7667C13.5667 14.3583 15.8333 12.0083 15.8333 9.1667H14.4167C14.4167 11.6667 12.3 13.4167 10 13.4167 9.923 13.4167 9.8462 13.4146 9.7697 13.4106ZM17.5 3.5583 16.4417 2.5 2.5 16.4417 3.5583 17.5 7.05 14.0167 8.075 12.9833 9.4583 11.6 12.4917 8.5667 17.5 3.5583Z");
 }
 
@@ -1448,7 +1448,7 @@ svg:is(.icon_c87d73) [d^="M13 16V5.41l3.3 3.3a1 1 0 1 0 1.4-1.42l-5-5a1 1 0 0 0-
 }
 
 /*HeadsetSlash*/
-.button_adca65:nth-last-child(2) .lottieIcon_f73ef7[style^="--__lottieIconColor: v"]>svg {
+.button_adca65:nth-last-child(2) .lottieIcon_f73ef7[style^="--__lottieIconColor: var(--status-danger)"]>svg {
     clip-path: path("M5.135 12.5054C5.0905 12.5018 5.0455 12.5 5 12.5H3.3333V10C3.3333 6.3233 6.3242 3.3333 10 3.3333 11.2341 3.3333 12.3909 3.6703 13.3832 4.2572L14.5918 3.0486C13.2743 2.1755 11.6955 1.6667 10 1.6667 5.405 1.6667 1.6667 5.4042 1.6667 10V15.9737L5.135 12.5054ZM16.4375 8.264C16.5869 8.8177 16.6667 9.3997 16.6667 10V12.5H15C14.08 12.5 13.3333 13.2467 13.3333 14.1667V16.6667C13.3333 17.5867 14.08 18.3333 15 18.3333H16.6667C17.5875 18.3333 18.3333 17.5867 18.3333 16.6667V10C18.3333 8.9229 18.128 7.8929 17.7544 6.9471L16.4375 8.264ZM2.6675 19.6869 1.489 18.5084 17.9882 2.0093 19.1667 3.1878 2.6675 19.6869Z");
 }
 
@@ -1460,13 +1460,8 @@ svg:is(.icon_c87d73) [d^="M13 16V5.41l3.3 3.3a1 1 0 1 0 1.4-1.42l-5-5a1 1 0 0 0-
 .buttonWrapper_f9af59:has(.lottieIcon_f73ef7) {
     width: 24px;
     height: 24px;
-    background: currentColor;
-    /* background: currentColor; */
+    background: none; /* This was `currentColor` which caused the solid color block gif button issue - Cats */
 }
-
-/* .buttonWrapper_f9af59:has(.lottieIcon_f73ef7)>* {
-    display: none !important;
-} */
 
 /*Gift*/
 .button_dd4f85:is(:nth-last-child(4), :nth-last-child(5)) .button_d0696b>.buttonWrapper_f9af59 {
@@ -1651,7 +1646,7 @@ html {
     --ping-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' role='img' width='24' height='24' viewBox='0 0 24 24' style='color: hsl(228 calc(var(--saturation-factor, 1)*5.2%) 38%);'%3E%3Cpath d='M7.19999 18C7.19999 17.3364 6.77 16.8 6.24019 16.8H3.3598C2.82999 16.8 2.39999 17.3364 2.39999 18V20.4C2.39999 21.0636 2.82999 21.6 3.3598 21.6H6.23923C6.76904 21.6 7.19903 21.0636 7.19903 20.4V18H7.19999Z' fill='currentColor'/%3E%3Cpath d='M14.4 10.6909C14.4 10.0876 13.9699 9.6 13.44 9.6H10.56C10.0301 9.6 9.60001 10.0876 9.60001 10.6909V20.5091C9.60001 21.1124 10.0301 21.6 10.56 21.6H13.44C13.9699 21.6 14.4 21.1124 14.4 20.5091V10.6909Z' fill='currentColor'/%3E%3Cpath d='M21.6 3.46667C21.6 2.8768 21.1699 2.4 20.64 2.4H17.76C17.2301 2.4 16.8 2.8768 16.8 3.46667V20.5333C16.8 21.1232 17.2301 21.6 17.76 21.6H20.64C21.1699 21.6 21.6 21.1232 21.6 20.5333V3.46667Z' fill='currentColor'/%3E%3C/svg%3E");
 }
 
-div.button_d0696b > .buttonWrapper_cecf00 > * {
+div.button_d0696b>.buttonWrapper_cecf00>* {
     display: block !important;
 }
 
@@ -1662,329 +1657,4 @@ div.buttonWrapper_cecf00 {
 
 .button_d0696b:not(.vc-chatbar-button .button_d0696b) .buttonWrapper_cecf00 {
     background-color: var(--current-color);
-}
-
-/* To the person who complained in this repository for being banned from the vencord server: enjoy light mode :3 - MrDiamondDog */
-/* The message above is very fun and shouldnt be reproduced - thororen */
-body:has([class*=panels_] [class*=avatarStack_] img[src*="646343450534346773"]) {
-    --action-sheet-gradient-bg: var(--primary-130);
-    --activity-card-background: var(--white);
-    --activity-card-icon-overlay: hsl(var(--primary-600-hsl) / 0.85);
-    --alert-bg: var(--white);
-    --android-navigation-bar-background: var(--primary-100);
-    --android-navigation-scrim-background: hsl(var(--primary-100-hsl) / 0.5);
-    --android-ripple: hsl(var(--black-hsl) / 0.12);
-    --autocomplete-bg: var(--primary-100);
-    --background-accent: var(--primary-430);
-    --background-floating: var(--white);
-    --background-mentioned: hsl(var(--yellow-300-hsl) / 0.1);
-    --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.2);
-    --background-message-automod: hsl(var(--red-400-hsl) / 0.05);
-    --background-message-automod-hover: hsl(var(--red-400-hsl) / 0.1);
-    --background-message-highlight: hsl(var(--brand-360-hsl) / 0.1);
-    --background-message-highlight-hover: hsl(var(--brand-360-hsl) / 0.2);
-    --background-message-hover: hsl(var(--primary-900-hsl) / 0.03);
-    --background-mobile-primary: var(--primary-100);
-    --background-mobile-secondary: var(--white);
-    --background-modifier-accent: hsl(var(--primary-400-hsl) / 0.24);
-    --background-modifier-accent-2: hsl(var(--primary-400-hsl) / 0.16);
-    --background-modifier-active: hsl(var(--primary-400-hsl) / 0.2);
-    --background-modifier-hover: hsl(var(--primary-400-hsl) / 0.16);
-    --background-modifier-selected: hsl(var(--primary-400-hsl) / 0.24);
-    --background-nested-floating: var(--white);
-    --background-primary: var(--white);
-    --background-secondary: var(--primary-130);
-    --background-secondary-alt: var(--primary-160);
-    --background-tertiary: var(--primary-200);
-    --bg-backdrop: hsl(var(--black-hsl) / 0.54);
-    --bg-backdrop-no-opacity: var(--black);
-    --bg-base-primary: var(--white);
-    --bg-base-secondary: var(--primary-130);
-    --bg-base-tertiary: var(--primary-160);
-    --bg-brand: var(--brand-500);
-    --bg-mod-faint: hsl(var(--primary-400-hsl) / 0.08);
-    --bg-mod-strong: hsl(var(--primary-400-hsl) / 0.24);
-    --bg-mod-subtle: hsl(var(--primary-400-hsl) / 0.16);
-    --bg-surface-overlay: var(--white);
-    --bg-surface-overlay-tmp: var(--primary-130);
-    --bg-surface-raised: var(--white);
-    --blur-fallback: hsl(var(--primary-530-hsl) / 0.96);
-    --blur-fallback-pressed: hsl(var(--primary-560-hsl) / 0.96);
-    --border-faint: hsl(var(--black-hsl) / 0.04);
-    --border-strong: hsl(var(--black-hsl) / 0.16);
-    --border-subtle: hsl(var(--black-hsl) / 0.08);
-    --bug-reporter-modal-submitting-background: hsl(var(--white-hsl) / 0.6);
-    --button-creator-revenue-background: var(--teal-430);
-    --button-danger-background: var(--red-430);
-    --button-danger-background-active: var(--red-530);
-    --button-danger-background-disabled: var(--red-430);
-    --button-danger-background-hover: var(--red-500);
-    --button-outline-brand-background: hsl(var(--white-hsl) / 0);
-    --button-outline-brand-background-active: var(--brand-560);
-    --button-outline-brand-background-hover: var(--brand-500);
-    --button-outline-brand-border: var(--brand-500);
-    --button-outline-brand-border-active: var(--brand-560);
-    --button-outline-brand-border-hover: var(--brand-500);
-    --button-outline-brand-text: var(--black);
-    --button-outline-brand-text-active: var(--white);
-    --button-outline-brand-text-hover: var(--white);
-    --button-outline-danger-background: hsl(var(--white-hsl) / 0);
-    --button-outline-danger-background-active: var(--red-460);
-    --button-outline-danger-background-hover: var(--red-430);
-    --button-outline-danger-border: var(--red-430);
-    --button-outline-danger-border-active: var(--red-430);
-    --button-outline-danger-border-hover: var(--red-430);
-    --button-outline-danger-text: var(--black);
-    --button-outline-danger-text-active: var(--white);
-    --button-outline-danger-text-hover: var(--white);
-    --button-outline-positive-background: hsl(var(--white-hsl) / 0);
-    --button-outline-positive-background-active: var(--green-530);
-    --button-outline-positive-background-hover: var(--green-430);
-    --button-outline-positive-border: var(--green-400);
-    --button-outline-positive-border-active: var(--green-530);
-    --button-outline-positive-border-hover: var(--green-430);
-    --button-outline-positive-text: var(--black);
-    --button-outline-positive-text-active: var(--white);
-    --button-outline-positive-text-hover: var(--white);
-    --button-outline-primary-background: hsl(var(--white-hsl) / 0);
-    --button-outline-primary-background-active: var(--primary-600);
-    --button-outline-primary-background-hover: var(--primary-530);
-    --button-outline-primary-border: var(--primary-530);
-    --button-outline-primary-border-active: var(--primary-600);
-    --button-outline-primary-border-hover: var(--primary-530);
-    --button-outline-primary-text: var(--black);
-    --button-outline-primary-text-active: var(--white);
-    --button-outline-primary-text-hover: var(--white);
-    --button-positive-background: var(--green-430);
-    --button-positive-background-active: var(--green-530);
-    --button-positive-background-disabled: var(--green-430);
-    --button-positive-background-hover: var(--green-530);
-    --button-secondary-background: var(--primary-430);
-    --button-secondary-background-active: var(--primary-530);
-    --button-secondary-background-disabled: var(--primary-430);
-    --button-secondary-background-hover: var(--primary-500);
-    --card-gradient-bg: hsl(var(--white-hsl) / 0.7);
-    --card-gradient-pressed-bg: hsl(var(--white-hsl) / 0.5);
-    --card-primary-bg: var(--white);
-    --card-primary-pressed-bg: var(--primary-160);
-    --card-secondary-bg: var(--white);
-    --card-secondary-pressed-bg: var(--primary-160);
-    --channel-icon: var(--primary-430);
-    --channel-text-area-placeholder: var(--primary-400);
-    --channels-default: var(--primary-460);
-    --channeltextarea-background: var(--primary-160);
-    --chat-background: var(--white);
-    --chat-banner-bg: var(--primary-130);
-    --chat-border: var(--primary-200);
-    --chat-input-container-background: var(--white);
-    --chat-swipe-to-reply-background: var(--primary-160);
-    --chat-swipe-to-reply-gradient-background: hsl(var(--white-hsl) / 0.4);
-    --coachmark-bg: var(--white);
-    --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
-    --content-inventory-overlay-text-primary: hsl(var(--white-hsl) / 0.85);
-    --content-inventory-overlay-text-secondary: hsl(var(--white-hsl) / 0.7);
-    --content-inventory-overlay-ui-mod: hsl(var(--white-hsl) / 0.7);
-    --content-inventory-overlay-ui-mod-bg: hsl(var(--black-hsl) / 0.1);
-    --context-menu-backdrop-background: hsl(var(--black-hsl) / 0.54);
-    --control-brand-foreground: var(--brand-500);
-    --control-brand-foreground-new: var(--brand-500);
-    --creator-revenue-icon-gradient-end: var(--teal-400);
-    --creator-revenue-icon-gradient-start: var(--teal-345);
-    --creator-revenue-info-box-background: hsl(var(--teal-430-hsl) / 0.1);
-    --creator-revenue-info-box-border: var(--teal-400);
-    --creator-revenue-locked-channel-icon: var(--teal-400);
-    --creator-revenue-progress-bar: var(--teal-345);
-    --deprecated-card-bg: var(--primary-100);
-    --deprecated-card-editable-bg: hsl(var(--primary-100-hsl) / 0.6);
-    --deprecated-quickswitcher-input-background: var(--white);
-    --deprecated-quickswitcher-input-placeholder: hsl(var(--primary-500-hsl) / 0.3);
-    --deprecated-store-bg: var(--primary-100);
-    --deprecated-text-input-bg: var(--primary-200);
-    --deprecated-text-input-border: hsl(var(--primary-500-hsl) / 0.3);
-    --deprecated-text-input-border-disabled: var(--primary-200);
-    --deprecated-text-input-border-hover: var(--primary-300);
-    --deprecated-text-input-prefix: var(--primary-300);
-    --display-banner-overflow-background: hsl(var(--white-hsl) / 0.5);
-    --divider-strong: hsl(var(--black-hsl) / 0.16);
-    --divider-subtle: hsl(var(--black-hsl) / 0.08);
-    --embed-background: var(--primary-130);
-    --embed-background-alternate: var(--primary-200);
-    --embed-title: var(--primary-860);
-    --expression-picker-bg: var(--primary-130);
-    --focus-primary: var(--blue-360);
-    --forum-post-extra-media-count-container-background: hsl(var(--primary-160-hsl) / 0.8);
-    --forum-post-tag-background: hsl(var(--primary-160-hsl) / 0.9);
-    --guild-icon-inactive-bg: var(--primary-130);
-    --guild-icon-inactive-nested-bg: var(--white);
-    --guild-notifications-bottom-sheet-pill-background: var(--white);
-    --halo-positive: hsl(var(--green-360-hsl) / 0.24);
-    --header-muted: var(--primary-460);
-    --header-primary: var(--primary-860);
-    --header-secondary: var(--primary-500);
-    --home-background: var(--primary-100);
-    --home-card-resting-border: hsl(var(--primary-400-hsl) / 0.24);
-    --icon-muted: var(--primary-400);
-    --icon-primary: var(--primary-860);
-    --icon-secondary: var(--primary-500);
-    --icon-transparent: hsl(var(--transparent-hsl) / 0.01);
-    --info-box-background: hsl(var(--blue-345-hsl) / 0.1);
-    --info-danger-background: hsl(var(--red-430-hsl) / 0.1);
-    --info-danger-foreground: var(--red-430);
-    --info-danger-text: var(--black);
-    --info-help-background: hsl(var(--blue-430-hsl) / 0.1);
-    --info-help-foreground: var(--blue-430);
-    --info-help-text: var(--black);
-    --info-positive-background: hsl(var(--green-400-hsl) / 0.05);
-    --info-positive-foreground: var(--green-400);
-    --info-positive-text: var(--black);
-    --info-warning-background: hsl(var(--yellow-400-hsl) / 0.1);
-    --info-warning-foreground: var(--yellow-400);
-    --info-warning-text: var(--black);
-    --input-background: hsl(var(--black-hsl) / 0.08);
-    --input-focused-border: hsl(var(--black-hsl) / 0.16);
-    --input-placeholder-text: var(--primary-460);
-    --interactive-active: var(--primary-860);
-    --interactive-hover: var(--primary-600);
-    --interactive-muted: var(--primary-300);
-    --interactive-normal: var(--primary-500);
-    --legacy-android-blur-overlay-default: hsl(var(--primary-130-hsl) / 0.1);
-    --legacy-android-blur-overlay-ultra-thin: hsl(var(--white-hsl) / 0.25);
-    --legacy-blur-fallback-default: hsl(var(--primary-230-hsl) / 0.975);
-    --legacy-blur-fallback-ultra-thin: hsl(var(--white-hsl) / 0.95);
-    --live-stage-tile-border: hsl(var(--primary-430-hsl) / 0.15);
-    --logo-primary: var(--brand-500);
-    --mention-background: hsl(var(--brand-500-hsl) / 0.15);
-    --mention-foreground: var(--brand-500);
-    --modal-background: var(--white);
-    --modal-footer-background: var(--primary-130);
-    --navigator-header-tint: var(--primary-500);
-    --panel-bg: var(--white);
-    --polls-normal-fill-hover: var(--primary-230);
-    --polls-normal-image-background: var(--white);
-    --polls-victor-fill: hsl(var(--green-400-hsl) / 0.2);
-    --polls-voted-fill: hsl(var(--brand-500-hsl) / 0.2);
-    --premium-nitro-pink-text: var(--premium-nitro-pink-dark);
-    --profile-gradient-card-background: hsl(var(--white-hsl) / 0.7);
-    --profile-gradient-message-input-border: hsl(var(--primary-430-hsl) / 0.24);
-    --profile-gradient-note-background: hsl(var(--white-hsl) / 0.3);
-    --profile-gradient-overlay: hsl(var(--white-hsl) / 0.6);
-    --profile-gradient-overlay-synced-with-user-theme: hsl(var(--white-hsl) / 0.8);
-    --profile-gradient-profile-body-background-hover: hsl(var(--black-hsl) / 0.08);
-    --profile-gradient-role-pill-background: hsl(var(--white-hsl) / 0.5);
-    --profile-gradient-role-pill-border: hsl(var(--primary-660-hsl) / 0.2);
-    --profile-gradient-section-box: hsl(var(--white-hsl) / 0.45);
-    --redesign-activity-card-background: var(--white);
-    --redesign-activity-card-background-pressed: var(--primary-160);
-    --redesign-activity-card-badge-icon: var(--primary-400);
-    --redesign-activity-card-border: hsl(var(--primary-400-hsl) / 0.24);
-    --redesign-activity-card-overflow-background: var(--primary-230);
-    --redesign-button-active-background: var(--green-430);
-    --redesign-button-active-pressed-background: var(--green-460);
-    --redesign-button-active-text: var(--white);
-    --redesign-button-danger-background: var(--red-430);
-    --redesign-button-danger-pressed-background: var(--red-460);
-    --redesign-button-danger-text: var(--white);
-    --redesign-button-destructive-background: var(--red-430);
-    --redesign-button-destructive-pressed-background: var(--red-460);
-    --redesign-button-destructive-text: var(--white);
-    --redesign-button-overlay-alpha-background: hsl(var(--black-hsl) / 0.54);
-    --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-hsl) / 0.64);
-    --redesign-button-overlay-alpha-text: var(--white);
-    --redesign-button-overlay-background: var(--white);
-    --redesign-button-overlay-pressed-background: var(--primary-230);
-    --redesign-button-overlay-text: var(--primary-860);
-    --redesign-button-positive-background: var(--green-430);
-    --redesign-button-positive-pressed-background: var(--green-460);
-    --redesign-button-positive-text: var(--white);
-    --redesign-button-primary-alt-background: hsl(var(--brand-500-hsl) / 0);
-    --redesign-button-primary-alt-border: var(--brand-500);
-    --redesign-button-primary-alt-on-blurple-background: hsl(var(--brand-530-hsl) / 0);
-    --redesign-button-primary-alt-on-blurple-border: var(--white);
-    --redesign-button-primary-alt-on-blurple-pressed-background: var(--brand-530);
-    --redesign-button-primary-alt-on-blurple-pressed-border: var(--brand-360);
-    --redesign-button-primary-alt-on-blurple-text: var(--white);
-    --redesign-button-primary-alt-pressed-background: hsl(var(--brand-500-hsl) / 0.06);
-    --redesign-button-primary-alt-pressed-border: var(--brand-330);
-    --redesign-button-primary-alt-pressed-text: var(--brand-560);
-    --redesign-button-primary-alt-text: var(--brand-500);
-    --redesign-button-primary-background: var(--brand-500);
-    --redesign-button-primary-on-blurple-pressed-text: var(--brand-530);
-    --redesign-button-primary-overlay-background: var(--white);
-    --redesign-button-primary-overlay-pressed-background: var(--primary-230);
-    --redesign-button-primary-overlay-text: var(--primary-860);
-    --redesign-button-primary-pressed-background: var(--brand-560);
-    --redesign-button-primary-text: var(--white);
-    --redesign-button-secondary-background: var(--white);
-    --redesign-button-secondary-border: hsl(var(--black-hsl) / 0.08);
-    --redesign-button-secondary-overlay-background: hsl(var(--black-hsl) / 0.54);
-    --redesign-button-secondary-overlay-pressed-background: hsl(var(--black-hsl) / 0.64);
-    --redesign-button-secondary-overlay-text: var(--white);
-    --redesign-button-secondary-pressed-background: var(--primary-130);
-    --redesign-button-secondary-pressed-border: hsl(var(--black-hsl) / 0.04);
-    --redesign-button-secondary-text: var(--primary-600);
-    --redesign-button-selected-background: hsl(var(--brand-500-hsl) / 0.16);
-    --redesign-button-selected-pressed-background: hsl(var(--brand-500-hsl) / 0.24);
-    --redesign-button-selected-text: var(--brand-500);
-    --redesign-button-tertiary-background: hsl(var(--black-hsl) / 0.08);
-    --redesign-button-tertiary-pressed-background: hsl(var(--black-hsl) / 0.16);
-    --redesign-button-tertiary-pressed-text: var(--primary-500);
-    --redesign-button-tertiary-text: var(--primary-600);
-    --redesign-channel-category-name-text: var(--primary-500);
-    --redesign-channel-message-preview-text: var(--primary-460);
-    --redesign-channel-name-muted-text: var(--primary-460);
-    --redesign-channel-name-text: var(--primary-860);
-    --redesign-chat-input-background: hsl(var(--black-hsl) / 0.08);
-    --redesign-image-button-pressed-background: hsl(var(--black-hsl) / 0.08);
-    --redesign-input-control-active-bg: var(--white);
-    --redesign-input-control-selected: var(--brand-500);
-    --redesign-only-background-active: var(--primary-430);
-    --redesign-only-background-default: var(--white);
-    --redesign-only-background-overlay: var(--primary-160);
-    --redesign-only-background-raised: var(--primary-130);
-    --redesign-only-background-sunken: var(--primary-200);
-    --scrollbar-auto-scrollbar-color-thumb: var(--primary-230);
-    --scrollbar-auto-scrollbar-color-track: var(--primary-130);
-    --scrollbar-auto-thumb: var(--primary-300);
-    --scrollbar-auto-track: var(--primary-160);
-    --scrollbar-thin-thumb: hsl(var(--primary-500-hsl) / 0.3);
-    --scrollbar-thin-track: hsl(var(--black-hsl) / 0);
-    --spoiler-hidden-background: var(--primary-200);
-    --spoiler-revealed-background: var(--primary-160);
-    --stage-card-pill-bg: var(--white);
-    --status-danger: var(--red-430);
-    --status-danger-background: var(--red-430);
-    --status-danger-text: var(--white);
-    --status-dnd: var(--red-430);
-    --status-idle: var(--yellow-400);
-    --status-offline: var(--primary-460);
-    --status-online: var(--green-400);
-    --status-positive: var(--green-400);
-    --status-positive-background: var(--green-430);
-    --status-positive-text: var(--white);
-    --status-speaking: var(--green-360);
-    --status-warning: var(--yellow-400);
-    --status-warning-background: var(--yellow-400);
-    --status-warning-text: var(--white);
-    --text-brand: var(--brand-500);
-    --text-danger: var(--red-500);
-    --text-link: var(--blue-430);
-    --text-link-low-saturation: var(--blue-430);
-    --text-low-contrast: var(--primary-460);
-    --text-message-preview-low-sat: var(--primary-460);
-    --text-muted: var(--primary-460);
-    --text-muted-on-default: var(--primary-430);
-    --text-normal: var(--primary-600);
-    --text-positive: var(--green-430);
-    --text-primary: var(--primary-600);
-    --text-secondary: var(--primary-500);
-    --text-warning: var(--yellow-430);
-    --textbox-markdown-syntax: var(--primary-530);
-    --theme-locked-blur-fallback: hsl(var(--primary-700-hsl) / 0.96);
-    --thread-channel-spine: var(--primary-300);
-    --toast-bg: var(--white);
-    --typing-indicator-bg: var(--primary-130);
-    --user-profile-header-overflow-background: hsl(var(--white-hsl) / 0.5);
-    --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
-    --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
-    --you-bar-bg: var(--white)
 }
